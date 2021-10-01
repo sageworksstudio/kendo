@@ -15,6 +15,7 @@
     "@progress/kendo-grid-vue-wrapper": "^2021.3.914",
     "@progress/kendo-licensing": "^1.2.0",
     "@progress/kendo-theme-default": "^4.41.2",
+    "@progress/kendo-ui": "^2021.3.914",
     "@progress/kendo-vue-animation": "^2.5.0",
     "@progress/kendo-vue-data-tools": "^2.5.0",
     "@progress/kendo-vue-dateinputs": "^2.5.0",

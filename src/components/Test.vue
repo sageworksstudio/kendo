@@ -2,12 +2,12 @@
 
   <datasource ref="remoteDataSource"
     :transport-read-url="'https://my-json-server.typicode.com/sageworksstudio/json-server/test'"
-    :transport-read-data-type="'json'"
+    :transport-read-data-type="'jsonp'"
     :transport-read-type="'GET'"
     :transport-update-url="'https://my-json-server.typicode.com/sageworksstudio/json-server/test'"
-    :transport-update-data-type="'json'"
+    :transport-update-data-type="'jsonp'"
     :transport-update-type="'GET'"
-    :schema-model-id="'ProductID'"
+    :schema-model-id="'id'"
     :page-size='20'>
   </datasource>
   <!-- :schema-model-fields="schemaModelFields" -->
@@ -28,7 +28,7 @@
 import { DataSource } from '@progress/kendo-datasource-vue-wrapper'
 import { Grid, GridColumn } from '@progress/kendo-grid-vue-wrapper'
 export default {
-  name: 'App',
+  name: 'Test',
   components: {
     'grid': Grid,
 		'grid-column': GridColumn,
