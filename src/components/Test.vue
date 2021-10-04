@@ -1,13 +1,13 @@
 <template>
 
   <datasource ref="remoteDataSource"
-    :transport-read-url="'https://my-json-server.typicode.com/sageworksstudio/json-server/test'"
-    :transport-read-data-type="'jsonp'"
+    :transport-read-url="'http://localhost:3000/api/orders'"
+    :transport-read-data-type="'json'"
     :transport-read-type="'GET'"
-    :transport-update-url="'https://my-json-server.typicode.com/sageworksstudio/json-server/test'"
-    :transport-update-data-type="'jsonp'"
+    :transport-update-url="'http://localhost:3000/api/orders'"
+    :transport-update-data-type="'json'"
     :transport-update-type="'GET'"
-    :schema-model-id="'id'"
+    :schema-data="'data'"
     :page-size='20'>
   </datasource>
   <!-- :schema-model-fields="schemaModelFields" -->
@@ -16,9 +16,9 @@
     :data-source-ref="'remoteDataSource'"
     :pageable='true'
     :editable="'inline'">
-      <grid-column field="id"></grid-column>
-      <grid-column field="title" title="Title" :width="120"></grid-column>
-      <grid-column field="active" title="Active" :width="120"></grid-column>
+      <grid-column field="id" title="ID"></grid-column>
+      <grid-column field="order_number" title="Order#" :width="120"></grid-column>
+      <grid-column field="status" title="Status" :width="120"></grid-column>
       <grid-column :command="['edit']" title="&nbsp;" width="250px"></grid-column>
   </grid>
 
